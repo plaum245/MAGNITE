@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="png" href="./images/Logo_B.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- Added Magnite logo image -->
+                <a href="index.html"><img src="./images/LOGO_W.png" alt="Magnite"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#member">MEMBER</a></li>
+                <li><a href="#character">CHARACTER</a></li>
+                <li><a href="#video">VIDEO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="main" class="hero">
+        <!-- Restructured slider to have fixed logo and dots outside of slides -->
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="./images/Magnite_1.png" alt="Magnite Hero 1">
+            </div>
+            <div class="slide">
+                <img src="./images/Magnite_2.png" alt="Magnite Hero 2">
+            </div>
+            <div class="slide">
+                <img src="./images/Magnite_3.png" alt="Magnite Hero 3">
+            </div>
+        </div>
+        
+        <!-- Moved overlay and logo outside of individual slides for fixed positioning -->
+        <div class="slide-overlay"></div>
+        <div class="hero-logo">
+            <img src="./images/LOGO_W.png" alt="Magnite Game Logo" class="magnite-logo">
+        </div>
+        
+        <div class="slider-controls">
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added new CTA section below hero slider -->
+    <section id="about" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>MAGNITE</h2>
+                    <p>THE FIRST ORDEAL</p>
+                </div>
+                <a href="about.html"><button class="cta-button">자세히 보기</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section  class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Added game poster image -->
+                <div class="about-image">
+                    <img src="./images/logo2.png" alt="Magnite Game Poster">
+                </div>
+                <div class="about-text">
+                    <h1>MAGNITE</h1>
+                    <p class="about-subtitle">VIRTY / VR GMAE</p>
+                    
+                    <div class="about-description">
+                        <h3>게임 개요</h3>  
+                        <p>VR 핸드트래킹을 이용한 일대일 액션 게임입니다. <br>플레이어는 다양한 캐릭터들과 함께 모험을 떠나며, 각각의 고유한 능력을 활용해 퍼즐을 해결하고 적들과 싸워나갑니다.</p>
+                        
+                        <h3>게임 특징</h3>
+                        <p>혁신적인 제스처 컨트롤 시스템을 통해 직관적이고 몰입감 있는 게임 플레이를 제공합니다.<br> 각 캐릭터마다 고유한 스킬과 스토리를 가지고 있어 다양한 플레이 경험을 선사합니다.</p>
+                    
+                        <h3>게임 목표</h3>
+                        <p>손 제스처를 마법을 시전하고, 적의 공격을 방어하여 모든 시험을 통과해 마법학교를 졸업하는 것입니다.</p>
+
+                        <h3>타겟층</h3>
+                        <p>게임을 좋아하는 10~20대 VR 및 핸드트래킹을 처음 접하는 유저 </p>
+
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span>VR</span>
+                        </div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span>1:1</span>
+                        </div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span>GAME</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="video-description">
+                <h3>게임 영상</h3>
+                <p>Magnite의 흥미진진한 게임 홍보 영상을 미리 확인해보세요.</p>
+                <p>몰입감 있는 스토리를 확인할 수 있습니다.</p>
+            </div>
+            
+            <div class="video-content">
+                <!-- Added actual game video -->
+                <div class="video-container">
+                    <video controls poster="./images/video-thumbnail.jpg">
+                        <source src="./images/movie01.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    
+
+
+    <!-- Character Section -->
+    <section id="character" class="character-section">
+        <div class="container">
+            <!-- Recreated character section to match reference images with interactive role selection -->
+            <div class="character-content">
+                <div class="character-left">
+                    <div class="character-header">
+                        <h2 class="character-title">캐릭터를<br>선택하세요</h2>
+                        <p class="character-subtitle">소환수와 면접관에 대해 더 알아가세요.</p>
+                        
+                        <div class="character-buttons">
+                            <a href="ch.html"><button class="character-btn primary">캐릭터 자세히 보기</button></a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="character-roles">
+                        <div class="role-item" data-character="ghost">
+                            <div class="role-icon ghost">
+                                <img src="./images/ghost.png" alt="ghost">
+                            </div>
+                            <span>0라운드</span>
+                            <span>GHOST</span>
+                        </div>
+                        <div class="role-item" data-character="mare">
+                            <div class="role-icon mare">
+                                <img src="./images/mare.png" alt="mare">
+                            </div>
+                            <span>1라운드</span>
+                            <span>MARE</span>
+                        </div>
+                        <div class="role-item" data-character="golem">
+                            <div class="role-icon golem">
+                                <img src="./images/golem.png" alt="golem">
+                            </div>
+                            <span>2라운드</span>
+                            <span>GOLEM</span>
+                        </div>
+                        <div class="role-item" data-character="professor">
+                            <div class="role-icon professor">
+                                <img src="./images/professor.png" alt="professor">
+                            </div>
+                            <span>3라운드</span>
+                            <span>PROFESSOR</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-right">
+                    <div class="character-display">
+                        <div class="character-circle">
+                            <img id="character-image" src="./images/ghost.png" alt="캐릭터">
+                        </div>
+                        <div class="character-info">
+                            <h3 id="character-name">GHOST</h3>
+                            <p id="character-description">튜토리얼 가이드</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Member Section -->
+    <section  id="member" class="member-section">
+        <div class="container">
+            <!-- Updated member section to match reference image style -->
+            <div class="member-header">
+                <h2 class="member-title">VIRTY</h2>
+                <p class="member-subtitle">가상과 현실의 경계를 넘나드는 팀</p>
+            </div>
+            <div class="member-icons">
+                <div class="member-icon">
+                    <div class="icon-circle">
+                        <img src="./images/마법사/김정하.png" alt="팀장">
+                    </div>
+                    <span>김정하</span>
+                    <p>기획, 3D 모델링, 이펙트 제작</p>
+                </div>
+                <div class="member-icon">
+                    <div class="icon-circle">
+                        <img src="./images/마법사/김다솜.png" alt="디자이너">
+                    </div>
+                    <span>김다솜</span>
+                    <p>3D 모델링, 이펙트 제작, 레벨 디자인</p>
+                </div>
+                <div class="member-icon">
+                    <div class="icon-circle">
+                        <img src="./images/마법사/이은경.png" alt="기획자">
+                    </div>
+                    <span>이은경</span>
+                    <p>기획, 3D 모델링, UI 디자인</p>
+                </div>
+                <div class="member-icon">
+                    <div class="icon-circle">
+                        <img src="./images/마법사/이지희.png" alt="디자이너">
+                    </div>
+                    <span>이지희</span>
+                    <p>3D 모델링, 이펙트 제작, 레벨 디자인</p>
+                </div>
+                <div class="member-icon">
+                    <div class="icon-circle">
+                        <img src="./images/마법사/최현규.png" alt="개발자">
+                    </div>
+                    <span>최현규</span>
+                    <p>기획, 프로그래밍</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    <footer id="footer"  class="content scroll_on type_bottom" role="contentinfo">
+      <div class="footer__inner ">
+        <div class="footer__text">
+          <span>MAGNITE</span>
+          <span>© VIRTY</span>
+        </div>
+        <div class="footer__info">
+          <div class="left">
+            <div class="title">
+              <a >VIRTY</a>
+            </div>
+            <p>VIRTY는 Virtual(가상)과 Reality(현실)의 합성어로 <br>
+                가상과 현실의 경계를 넘나든다는 의미를 가지고 있다. 
+            </p>
+            <br>
+            <ui class="sci">
+              <li><a href="#"><img src="./images/instagram.png"></a></li>
+              <li><a href="#"><img src="./images/facebook.png"></a></li>
+              <li><a href="#"><img src="./images/twitter.png"></a></li>
+              <li><a href="#"><img src="./images/discord.png"></a></li>
+            </ui>
+          </div>
+          <div class="right">
+            <div class="one">
+              <h3>Help</h3>
+              <ul>
+                <li>
+                  <a >Support</a>
+                  <em>Support You</em>
+                </li>
+                <li>
+                  <a >Merchandising License</a>
+                  <em>Merchandising License</em>
+                </li>
+              </ul>
+            </div>
+            <div class="two">
+              <h3>About</h3>
+              <ul>
+                <li>
+                  <a >About Us</a>
+                  <em>About Us</em>
+                </li>
+                <li>
+                  <a >FAQ</a>
+                  <em>FAQ</em>
+                </li>
+                <li>
+                  <a >Privacy Policy</a>
+                  <em>Privacy Policy</em>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          Copright © 2025<br>
+          VIRTY Company protected by copyright law
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
