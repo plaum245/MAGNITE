@@ -135,25 +135,25 @@ const characterData = {
   ghost: {
     name: "GHOST",
     description: "튜토리얼 가이드",
-    thumb: "/images/GHOST.png",      // role-item 썸네일
+    thumb: "./images/ghost.png",      // role-item 썸네일
     display: "./images/ghost.png"      // 우측 큰 이미지
   },
   mare: {
     name: "MARE",
     description: "긴 팔을 이용한 공격",
-    thumb: "/images/MARE.png",
+    thumb: "./images/mare.png",
     display: "./images/CH_01.png"
   },
   golem: {
     name: "GOLEM",
     description: "돌을 이용한 공격",
-    thumb: "/images/GOLEM.png",
+    thumb: "./images/golem.png",
     display: "./images/CH_02.png"
   },
   professor: {
     name: "PROFESSOR",
     description: "마법을 이용한 공격",
-    thumb: "/images/PROFESSOR.png",
+    thumb: "./images/professor.png",
     display: "./images/CH_03.png"
   }
 };
@@ -210,6 +210,7 @@ document.querySelectorAll(".role-item").forEach((roleItem) => {
     }, 250);
   });
 });
+
 
 
 
