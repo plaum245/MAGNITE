@@ -142,19 +142,19 @@ const characterData = {
     name: "MARE",
     description: "긴 팔을 이용한 공격",
     thumb: "/images/MARE.png",
-    display: "/images/CH_01.png"
+    display: "./images/CH_01.png"
   },
   golem: {
     name: "GOLEM",
     description: "돌을 이용한 공격",
     thumb: "/images/GOLEM.png",
-    display: "/images/CH_02.png"
+    display: "./images/CH_02.png"
   },
   professor: {
     name: "PROFESSOR",
     description: "마법을 이용한 공격",
     thumb: "/images/PROFESSOR.png",
-    display: "/images/CH_03.png"
+    display: "./images/CH_03.png"
   }
 };
 
@@ -210,6 +210,7 @@ document.querySelectorAll(".role-item").forEach((roleItem) => {
     }, 250);
   });
 });
+
 
 
 
