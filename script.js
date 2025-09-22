@@ -10,26 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {      // href가 
 })
 
 
-// // 2) .character 요소 호버 애니메이션
-// document.querySelectorAll(".character").forEach((character) => {     // .character 요소 모두 선택 (HTML엔 없음)
-//   character.addEventListener("mouseenter", function () {             // 마우스 진입 시
-//     this.style.transform = "translateY(-15px) scale(1.05)"           // 살짝 위로 & 확대
-//   })
-//   character.addEventListener("mouseleave", function () {             // 마우스 이탈 시
-//     this.style.transform = "translateY(0) scale(1)"                  // 원래 상태 복귀
-//   })
-// })
 
-
-// // 3) .control-item 클릭 상호작용
-// document.querySelectorAll(".control-item").forEach((item) => {       // .control-item 요소 모두 선택 (HTML엔 없음)
-//   item.addEventListener("click", function () {                       
-//     document.querySelectorAll(".control-item").forEach((i) => i.classList.remove("active")) // 모든 active 제거
-//     this.classList.add("active")                                     // 클릭한 것만 active
-//     this.style.background = "#ff6b35"                                // 임시로 배경 강조
-//     setTimeout(() => { this.style.background = "#333" }, 200)        // 0.2초 뒤 원래색 복귀
-//   })
-// })
 
 
 // 4) 비디오 재생 버튼 클릭 안내
@@ -210,7 +191,6 @@ document.querySelectorAll(".role-item").forEach((roleItem) => {
     }, 250);
   });
 });
-
 
 
 
